@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-Pizza _website</title>
+    <!-- =======CSS======== -->
+    <link rel="stylesheet" href="pizza.css">
+    <!-- ======REMIXICON===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ==========FEVICON======== -->
+</head>
+<body>
+<header class="header" id="header">
+  <nav class="nav container">
+  <a href="#" class="nav__logo">
+    <img src="images-pizza/logo-pizza (1).svg" alt="images">
+  </a>
+  <div class="nav__menu" id="nav-menu">
+    <ul class="nav__list">
+        <li>
+            <a href="#home" class="nav__link">Home</a>
+        </li>
+        <li>
+            <a href="#about" class="nav__link">About Us</a>
+        </li>
+        <li>
+            <a href="#popular" class="nav__link">Populare</a>
+        </li>
+        <li>
+            <a href="#product" class="nav__link">Products</a>
+        </li>
+        <li>
+            <a href="#contact" class="nav__link">Contact</a>
+        </li>
+    </ul>
+    <!-- close button -->
+    <div class="nav__close" id="nav-close">
+        <i class="ri-close-large-line"></i>
+    </div> 
+  </div>
+   <!-- toggle button -->
+   <div class="nav__toggle" id="nav-toggle">
+    <i class="ri-apps-2-fill"></i>
+</div>
+    </nav>
+</header>
+
+<!-- =====MAIN========== -->
+ <main class="main">
+
+    <!-- =========home======== -->
+     <section class="home section" id="home">
+        <div class="home__container container grid">
+            <div class="home__data">
+                <h1 class="home__title">Crispy And <br>Delicius Pizzas
+                </h1>           
+        <p class="home__description">Order the best pizzas to end your hunger
+            and make your family moments more memorable,place your order now
+        </p>  
+        <a href="#products" class="button">Order Pizzas Now</a> 
+        <img src="images-pizza/sticker-pizza (1).svg" alt="iamges" class="home__sticker-1">  
+        <img src="images-pizza/sticker-leaf (1).svg" alt="iamges" class="home__sticker-2">  
+        </div>
+        <div class="home__images">
+            <img src="images-pizza/home-pizza (1).png" alt="images" class="home__pizza">
+            <img src="images-pizza/home-board (1).png" alt="images" class="home__board">
+
+            <img src="images-pizza/home-leaf-1 (1).png" alt="images"    class="home__ingredient home__leaf-1">
+            <img src="images-pizza/home-leaf-2 (1).png" alt="images"    class="home__ingredient home__leaf-2">
+            <img src="images-pizza/home-pepperoni (1).png" alt="images" class="home__ingredient home__pepperoni">
+            <img src="images-pizza/home-mushroom (1).png" alt="images"  class="home__ingredient home__mushroom">
+            <img src="images-pizza/home-olive (1).png" alt="images"     class="home__ingredient home__olive">
+            <img src="images-pizza/home-tomato (2).png" alt="images"    class="home__ingredient home__tomato">
+        </div>
+        </div>
+     </section>
+
+     <!-- ===========ABOUT============= -->
+      <section class="section about" id="about">
+        <div class="about__container grid container">
+            <div class="about__data">
+                <h2 class="section__title">Learn More About <br>Our History</h2>
+                <p class="about__description">
+                    The secret to success is the best ingredients to 
+                    maabout__descriptionke a better pizza .Today we strive for 15years when
+                    we first opened the pizzaria in Lima-Peru.
+                </p>
+                <a href="#popular" class="button">The Best Pizzas</a>
+                <img src="images-pizza/sticker-cheese (1).svg" alt="" class="about__sticker">
+            </div>
+           <img src="images-pizza/about-img (2).png" alt="" class="about__img">
+        </div>
+      </section>
+      <section class="section popular" id="popular">
+        <div class="popular__container container grid">
+            <div class="popular__data">
+                <h2 class="section__title">Discover <br>Popular Order</h2>
+                <p class="popular__description">
+                    Select the best prepared and delicious flavors.
+                    we have collected some popular recipes from qround
+                    the world for you to chose your favourite. 
+                </p>
+            </div>
+            <div class="popular__swiper">
+                <img src="images-pizza/popular-dish (2).png" alt="images" class="popular__dish">
+                <div>
+                <article class="popular__card">
+                    <img src="images-pizza/popular-1 (1).png" alt="image" class="popular__img">
+                    <h3 class="popular__title">Margherita Pizza</h3>
+                </article>
+                </div>
+                <div>
+                    <article class="popular__card">
+                        <img src="images-pizza/popular-2 (1).png" alt="image" class="popular__img">
+                        <h3 class="popular__title">Mushroom Pizza</h3>
+                    </article>
+                    </div>
+                    <div>
+                     <article class="popular__card">
+                            <img src="images-pizza/popular-3 (1).png" alt="image" class="popular__img">
+                            <h3 class="popular__title">Pepperoni Pizza</h3>
+                      </article>
+                        </div>
+                
+            </div>
+        </div>
+      </section>
+      
+ </main>
+
+    <script src="pizza.js"></script>
+</body>
+</html>
