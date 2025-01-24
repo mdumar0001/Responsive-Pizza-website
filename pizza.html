@@ -6,6 +6,8 @@
     <title>Responsive-Pizza _website</title>
     <!-- =======CSS======== -->
     <link rel="stylesheet" href="pizza.css">
+    <!-- =======SWIPER CSS======= -->
+     <link rel="stylesheet" href="assets-pizza/swiper-bundle.min.css">
     <!-- ======REMIXICON===== -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- ==========FEVICON======== -->
@@ -14,7 +16,7 @@
 <header class="header" id="header">
   <nav class="nav container">
   <a href="#" class="nav__logo">
-    <img src="images-pizza/logo-pizza (1).svg" alt="images">
+    <img src="assets-pizza/logo-pizza (1).svg" alt="images">
   </a>
   <div class="nav__menu" id="nav-menu">
     <ul class="nav__list">
@@ -59,19 +61,19 @@
             and make your family moments more memorable,place your order now
         </p>  
         <a href="#products" class="button">Order Pizzas Now</a> 
-        <img src="images-pizza/sticker-pizza (1).svg" alt="iamges" class="home__sticker-1">  
-        <img src="images-pizza/sticker-leaf (1).svg" alt="iamges" class="home__sticker-2">  
+        <img src="assets-pizza/sticker-pizza (1).svg" alt="iamges" class="home__sticker-1">  
+        <img src="assets-pizza/sticker-leaf (1).svg" alt="iamges" class="home__sticker-2">  
         </div>
         <div class="home__images">
-            <img src="images-pizza/home-pizza (1).png" alt="images" class="home__pizza">
-            <img src="images-pizza/home-board (1).png" alt="images" class="home__board">
+            <img src="assets-pizza/home-pizza (1).png" alt="images" class="home__pizza">
+            <img src="assets-pizza/home-board (1).png" alt="images" class="home__board">
 
-            <img src="images-pizza/home-leaf-1 (1).png" alt="images"    class="home__ingredient home__leaf-1">
-            <img src="images-pizza/home-leaf-2 (1).png" alt="images"    class="home__ingredient home__leaf-2">
-            <img src="images-pizza/home-pepperoni (1).png" alt="images" class="home__ingredient home__pepperoni">
-            <img src="images-pizza/home-mushroom (1).png" alt="images"  class="home__ingredient home__mushroom">
-            <img src="images-pizza/home-olive (1).png" alt="images"     class="home__ingredient home__olive">
-            <img src="images-pizza/home-tomato (2).png" alt="images"    class="home__ingredient home__tomato">
+            <img src="assets-pizza/home-leaf-1 (1).png" alt="images"    class="home__ingredient home__leaf-1">
+            <img src="assets-pizza/home-leaf-2 (1).png" alt="images"    class="home__ingredient home__leaf-2">
+            <img src="assets-pizza/home-pepperoni (1).png" alt="images" class="home__ingredient home__pepperoni">
+            <img src="assets-pizza/home-mushroom (1).png" alt="images"  class="home__ingredient home__mushroom">
+            <img src="assets-pizza/home-olive (1).png" alt="images"     class="home__ingredient home__olive">
+            <img src="assets-pizza/home-tomato (2).png" alt="images"    class="home__ingredient home__tomato">
         </div>
         </div>
      </section>
@@ -87,11 +89,13 @@
                     we first opened the pizzaria in Lima-Peru.
                 </p>
                 <a href="#popular" class="button">The Best Pizzas</a>
-                <img src="images-pizza/sticker-cheese (1).svg" alt="" class="about__sticker">
+                <img src="assets-pizza/sticker-cheese (1).svg" alt="" class="about__sticker">
             </div>
-           <img src="images-pizza/about-img (2).png" alt="" class="about__img">
+           <img src="assets-pizza/about-img (2).png" alt="" class="about__img">
         </div>
       </section>
+
+      <!-- ======POPULAR========= -->
       <section class="section popular" id="popular">
         <div class="popular__container container grid">
             <div class="popular__data">
@@ -102,33 +106,141 @@
                     the world for you to chose your favourite. 
                 </p>
             </div>
-            <div class="popular__swiper">
-                <img src="images-pizza/popular-dish (2).png" alt="images" class="popular__dish">
-                <div>
-                <article class="popular__card">
-                    <img src="images-pizza/popular-1 (1).png" alt="image" class="popular__img">
+            <div class="popular__swiper swiper">
+                <img src="assets-pizza/popular-dish (2).png" alt="images" class="popular__dish">
+                <div class="swiper-wrapper">
+                <article class="popular__card swiper-slide">
+                    <img src="assets-pizza/popular-1 (1).png" alt="image" class="popular__img">
                     <h3 class="popular__title">Margherita Pizza</h3>
                 </article>
+                <article class="popular__card swiper-slide">
+                     <img src="assets-pizza/popular-2 (1).png" alt="image" class="popular__img">
+                     <h3 class="popular__title">Mushroom Pizza</h3>
+                 </article>
+                 <article class="popular__card swiper-slide">
+                       <img src="assets-pizza/popular-3 (1).png" alt="image" class="popular__img">
+                       <h3 class="popular__title">Pepperoni Pizza</h3>
+                   </article>
+                 </div>
                 </div>
-                <div>
-                    <article class="popular__card">
-                        <img src="images-pizza/popular-2 (1).png" alt="image" class="popular__img">
-                        <h3 class="popular__title">Mushroom Pizza</h3>
-                    </article>
-                    </div>
-                    <div>
-                     <article class="popular__card">
-                            <img src="images-pizza/popular-3 (1).png" alt="image" class="popular__img">
-                            <h3 class="popular__title">Pepperoni Pizza</h3>
-                      </article>
-                        </div>
-                
-            </div>
         </div>
       </section>
+      <!-- ===============RECIPE============= -->
+      <section class="section recipe">
+        <h2 class="section__title">Fresh And <br>Natural Ingredients</h2>
+         <div class="recipe__container container grid">
+            <div class="recipe__list grid">
+                <div class="recipe__ingredient">
+                    <img src="assets-pizza/recipe-flour (1).png" alt="" class="recipe__image">
+                    <div>
+                        <h3 class="recipe__name">Flour</h3>
+                        <p class="recipe__description">The best wheat from 
+                            the best flour.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="recipe__ingredient">
+                    <img src="assets-pizza/recipe-cheese (2).png" alt="" class="recipe__image">
+                    <div>
+                        <h3 class="recipe__name">Cheese</h3>
+                        <p class="recipe__description">Indulge in cheese for a healthy future.</p>
+                    </div>
+                </div>
+
+                <div class="recipe__ingredient">
+                    <img src="assets-pizza/recipe-sauces (2).png" alt="" class="recipe__image">
+                    <div>
+                        <h3 class="recipe__name">Sauces</h3>
+                        <p class="recipe__description">Add a touch of salsa to your life
+                            and it will taste better.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="recipe__ingredient">
+                    <img src="assets-pizza/recipe-tomato (1).png" alt="" class="recipe__image">
+                    <div>
+                        <h3 class="recipe__name">Vegetables</h3>
+                        <p class="recipe__description">Vegetables full of the essence of nature
+                            and organic.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="recipe__ingredient">
+                    <img src="assets-pizza/recipe-meat (2).png" alt="" class="recipe__image">
+                    <div>
+                        <h3 class="recipe__name">Meat</h3>
+                        <p class="recipe__description">VThe best fresh meats for your health.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+          <img src="assets-pizza/recipe-img (1).png" alt="" class="recipe__img">
+         </div>
+      </section>
+
+      <!-- =======PRODUCTS========= -->
+       <section class="section products" id="products">
+        <h2 class="section__title">The Most <br>Devoured Pizzas</h2>
+        <div class="container products__container grid">
+            <article class="products__card">
+                <img src="assets-pizza/product-1 (1).png" alt="images" class="products__img">
+                <h3 class="products__name">Vegetarian <br>Pizza</h3>
+                <span class="products__price">$15</span>
+                <button class="products__button">
+                    <i class="ri-shopping-bag-3-fill"></i>
+                </button>
+            </article>
+
+            <article class="products__card">
+                <img src="assets-pizza/product-2 (1).png" alt="images" class="products__img">
+                <h3 class="products__name">Pepperoni<br>Pizza</h3>
+                <span class="products__price">$10</span>
+                <button class="products__button">
+                    <i class="ri-shopping-bag-3-fill"></i>
+                </button>
+            </article>
+
+            <article class="products__card">
+                <img src="assets-pizza/product-3 (2).png" alt="images" class="products__img">
+                <h3 class="products__name">Margherita<br>Pizza</h3>
+                <span class="products__price">$12</span>
+                <button class="products__button">
+                    <i class="ri-shopping-bag-3-fill"></i>
+                </button>
+            </article>
+
+            <article class="products__card">
+                <img src="assets-pizza/product-4 (1).png" alt="images" class="products__img">
+                <h3 class="products__name">Mushroom<br>Pizza</h3>
+                <span class="products__price">$17</span>
+                <button class="products__button">
+                    <i class="ri-shopping-bag-3-fill"></i>
+                </button>
+            </article>
+
+            <article class="products__card">
+                <img src="assets-pizza/product-5 (1).png" alt="images" class="products__img">
+                <h3 class="products__name">Italian<br>Pizza</h3>
+                <span class="products__price">$10</span>
+                <button class="products__button">
+                    <i class="ri-shopping-bag-3-fill"></i>
+                </button>
+            </article>
+        </div>
+       </section>
       
  </main>
+ 
+ <!-- ==========SWIPER JS========== -->
+  <script src="assets-pizza/swiper-bundle.min.js"> 
+ 
+ </script> 
+  <!-- =======MAIN JS========== -->
+  <script src="pizza.js"></script>
 
-    <script src="pizza.js"></script>
 </body>
 </html>

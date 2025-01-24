@@ -34,3 +34,11 @@ const shadowHeader=()=>{
                        :header.classList.remove('shadow-header')
 }
 window.addEventListener('scroll',shadowHeader)
+
+// =======SWIPER POPULAR=====
+const swiper = new Swiper('.popular__swiper', {
+    loop: true,
+    grabCursor:true,
+    slidesPerView:'auto',
+    centeredSlides:'auto',
+   }); 
